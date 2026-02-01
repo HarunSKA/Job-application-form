@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Survey Form</title>
     <style>
 .submit-space{
@@ -17,19 +17,19 @@
     <h1 id="title">Job Application</h1>
     <p id="description">Please provide your details below to start your application process</p>
    <form id="survey-form" action="https://formspree.io/f/mojlqpjk" method="POST">
-     <label for="name"id="name-label">Name</label>  <input id="name"  type="text" name="full-name" required placeholder="e.g. Anidu haruna" >
+     <label for="name" id="name-label">Name</label>  <input id="name"  type="text" name="full-name" required placeholder="e.g. Anidu haruna" >
          
-   <br> <label for="email"id="email-label">Email</label>  <input id="email" type="email" name="email" required placeholder="e.g., Example@gmail.com" >   
+   <br> <label for="email" id="email-label">Email</label>  <input id="email" type="email" name="email" required placeholder="e.g., Example@gmail.com" >   
      <br> <label id="number-label">Phone Number</label> <input min="3" max="12"  name="phone" id="number" type="number" required placeholder="e.g., +2340900000000">     
       
       
-      <br> <label for="experience">Experience Level</label>
+      <br> <label for="dropdown">Experience Level</label>
        <select id="dropdown" name="experience-level">
          <option value="entry">Entry Level</option>
          <option value="senior">Senior Level</option>
        </select>
-    <br> <label for="confidence" >Are you willing to work overtime if required?</label>  <input type="radio" name="choice" value="yes-option">Yes</input>
-         <input type="radio" id="choice-no"name="choice" value="no-option">No</input>
+    <br> <label for="choice" >Are you willing to work overtime if required?</label>  <input type="radio" name="choice" value="yes-option">
+         <input type="radio" id="choice" name="choice" value="no-option">
      <p>How did you hear about our company?</p>
      <input type="checkbox" id="discovery-social" name="source" value="social-media">
 <label for="discovery-social">Social Media</label>
@@ -37,7 +37,7 @@
 <input type="checkbox" id="discovery-friend" name="source" value="friend">
 <label for="discovery-friend">Word of Mouth</label> 
 <p>Additional Comment<p>
-  <textarea col="50" name="Comment"  rows="4"></textarea>
+  <textarea cols="50" name="Comment"  rows="4"></textarea>
   <button id="submit" type="submit" class="submit-space">Submit</button>
   
        </form>
